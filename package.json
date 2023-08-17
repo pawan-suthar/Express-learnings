@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "routing": "nodemon routing/app.js",
-    "router": "nodemon routerr/learnrouter.js"
+    "router": "nodemon routerr/learnrouter.js",
+    "routepara":"nodemon routeparameter/apps.js"
     
   },
   "keywords": [],

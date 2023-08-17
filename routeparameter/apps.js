@@ -7,10 +7,17 @@ const port = process.env.PORT || 4000
 
 import stu from './routes/studentroutes.js' //es6
 import tea from './routes/teacherroutes.js'
+import test from "./routes/testing.js"
 
 // load router modules
 app.use('/student',stu)
 app.use('/teacher',tea)
+app.use('/test',test)
+
+
+app.get('/',(req,res)=>{
+    res.send("Home page ")
+})
 
 
 // other undefined paths 
@@ -20,5 +27,5 @@ app.all("*",(req,res)=>{
 
 // server listen 
 app.listen(port,()=>{
-    console.log(`server started for router on http://localhost:${port}`);
+    console.log(`server started for routeparameter on http://localhost:${port}`);
 })

@@ -106,5 +106,5 @@ app.all("*",(req,res)=>{
 
 /* ------------------------------ server listen ----------------------------- */
 app.listen(port,()=>{
-    console.log(`server started on http://localhost:${port}`);
+    console.log(`server started for routing on http://localhost:${port}`);
 })

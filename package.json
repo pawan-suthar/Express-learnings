@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "routing": "nodemon routing/app.js",
+    "router": "nodemon routerr/learnrouter.js"
+    
   },
   "keywords": [],
   "author": "",

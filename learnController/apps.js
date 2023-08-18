@@ -28,5 +28,5 @@ app.all("*",(req,res)=>{
 
 // server listen 
 app.listen(port,()=>{
-    console.log(`server started for routeparameter on http://localhost:${port}`);
+    console.log(`server started for controller on http://localhost:${port}`);
 })

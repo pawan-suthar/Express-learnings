@@ -1,5 +1,9 @@
 //student controller inside controller folder
 
+// controller can group related request handling logic seprately 
+// insted of defining all logic in one file so we seprate logic in controller folder 
+// to organize our folder and behavior of webapp
+
 const stu_create = (req,res)=>{
     res.send("student created")
 }

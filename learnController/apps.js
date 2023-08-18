@@ -3,18 +3,10 @@ import express from 'express' //es6
 const app = express()
 const port = process.env.PORT || 4000
 
-// const stu = require('./routes/studentroutes') es5
-// const tea = require('./routes/teacherroutes')
-
-import stu from './routes/studentroutes.js' //es6
-
-
+import stu from './routes/studentroutes.js'
 
 // load router modules
 app.use('/student',stu) //student routes
-
-
-
 
 app.get('/',(req,res)=>{
     res.send("Home page ")

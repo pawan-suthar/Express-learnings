@@ -10,9 +10,9 @@ import tea from './routes/teacherroutes.js'
 import test from "./routes/testing.js"
 
 // load router modules
-app.use('/student',stu)
-app.use('/teacher',tea)
-app.use('/test',test)
+app.use('/student',stu) //student routes
+app.use('/teacher',tea) // teacher router
+app.use('/test',test) // testing routing parameters
 
 
 app.get('/',(req,res)=>{

@@ -1,25 +1,26 @@
 import express from 'express' 
 const router  = express.Router()
 
+router.get('/',(req,res)=>{
+    res.send("testing routing parameters home page")
+})
+
 // routing parameter examples
 
-//get student name by parameter
-router.get('/all/:name/:age',(req,res)=>{
+
+router.get('/:name/:age',(req,res)=>{ //get student name by parameter
     console.log(req.params);
     // destructure
     const {name,age} = req.params
-    res.send(`student name is ${name} and age is ${age}`)
+    res.send(` name is ${name} and age is ${age}`)
 })
 
-// delete by id 
-router.delete('/delete/:id',(req,res)=>{
+
+router.delete('/delete/:id',(req,res)=>{ // delete by id 
     console.log(req.params);
-    res.send(`delete student ${req.params.id}`)
+    res.send(`delete ${req.params.id}`)
 })
 
-router.get('/',(req,res)=>{
-    res.send("test home page")
-})
 
 router.get('/product/:name/:id',(req,res)=>{
     const {name,id} = req.params
@@ -42,7 +43,6 @@ router.get('/student/:id([0-9]{2})',(req,res)=>{ //([0-9]{2}) only 0-9 digits an
     const {id} = req.params
     res.send(`student id is ${id} using regex`)
 })
-
 
 //  module.exports = router old
 export default router //new 

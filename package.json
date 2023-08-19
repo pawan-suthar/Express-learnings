@@ -8,7 +8,8 @@
     "router": "nodemon routerr/learnrouter.js",
     "routepara":"nodemon routeparameter/apps.js",
     "controller":"nodemon learnController/apps.js",
-    "views":"nodemon Learnviews/views.js"
+    "views":"nodemon Learnviews/views.js",
+    "staticfile":"nodemon staticfiles/app.js"
     
   },
   "keywords": [],

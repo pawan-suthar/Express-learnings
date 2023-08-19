@@ -1,5 +1,7 @@
+import path from 'path'
+
 const home = (req,res)=>{
-    res.send("home controller")
+    res.sendFile(path.join(process.cwd(),"Learnviews","view","home.html"))
 }
 
-export {home}
+export {home}   

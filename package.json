@@ -10,7 +10,8 @@
     "controller": "nodemon learnController/apps.js",
     "views": "nodemon Learnviews/views.js",
     "staticfile": "nodemon staticfiles/app.js",
-    "templatengine": "nodemon templatengine/engine.js"
+    "templatengine": "nodemon templatengine/engine.js",
+    "ejs":"nodemon ejs/ejs.js"
   },
   "keywords": [],
   "author": "",

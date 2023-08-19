@@ -1,0 +1,28 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- using local varaible using ejs tag -->
+    <title><%=title%></title>
+  </head>
+  <body>
+    <!--display data-->
+    <h1><%=hero%></h1>
+    <!-- create and display -->
+    <% var course = "express"; %>
+    <h1>tech i learn is <%= course %></h1>
+    <!-- comment -->
+    <%# comment not show in webpage %>
+    <!-- if -->
+    <% if (title) { %> <%= title %> <% } %>
+    <br />
+    <!-- if else  -->
+    <% if (id==10) { %> <%= id %> <% } else { %> this is not 10 <% } %>
+    <br />
+    <!-- for loop -->
+    <% for(i=0; i<=4;i++) { %> <%= i%> <% } %>
+    <br />
+  </body>
+</html>

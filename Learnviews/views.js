@@ -1,7 +1,7 @@
 // const express = require('express') es5
 import express from 'express' //es6
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 
 import web from './routes/web.js'
 

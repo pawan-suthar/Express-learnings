@@ -2,7 +2,7 @@ import Student from "../models/StudentModel.js";
 
 //home
 const home = (req, res) => {
-  res.send("student api home page");
+  res.send("student api home page  <a href='https://documenter.getpostman.com/view/16671987/2s9Y5TyPsi' target='_blank'>Postman Doc Link</a>");
 };
 
 //create stu

@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "c4bdc757-c6ed-4a5c-939e-3f5cc379ed81",
+		"name": "studentapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16671987"
+	},
+	"item": [
+		{
+			"name": "create stu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"pawan suthar\",\r\n    \"age\":22,\r\n    \"class\":\"Msc prev\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/create-student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all stu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/all-stu",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"all-stu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update stu",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"pawan\",\r\n    \"age\": 22,\r\n    \"class\": \"Msc final\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update-stu/64e31bb9fd84525c27f15a83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update-stu",
+						"64e31bb9fd84525c27f15a83"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "serch by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/all-stu/64e31bb9fd84525c27f15a83",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"all-stu",
+						"64e31bb9fd84525c27f15a83"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete stu",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete-stu/64e31c1efd84525c27f15a86",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete-stu",
+						"64e31c1efd84525c27f15a86"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

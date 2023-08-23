@@ -11,7 +11,7 @@
     "views": "nodemon Learnviews/views.js",
     "staticfile": "nodemon staticfiles/app.js",
     "templatengine": "nodemon templatengine/engine.js",
-    "ejs": "nodemon ejs/ejs.js",
+    "ejs": "nodemon ejs/ejs.js -e js,ejs",
     "middleware": "nodemon Learnmiddleware/server.js",
     "mongoose": "nodemon mongoose/server.js"
   },
